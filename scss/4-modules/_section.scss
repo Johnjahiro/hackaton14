@@ -1,0 +1,19 @@
+.retos {
+  margin: auto;
+  width: 60%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  text-align: center;
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  button {
+    padding: 10px;
+  }
+}

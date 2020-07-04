@@ -1,0 +1,21 @@
+.menu {
+  height: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a {
+    width: 100px;
+    height: inherit;
+    color: #fff;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid burlywood;
+    border-left: 1px solid burlywood;
+    &:hover {
+      background: rgb(92, 149, 223);
+    }
+  }
+}

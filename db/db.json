@@ -1,0 +1,22 @@
+{
+  "videos": [
+    {
+      "url": "https://metricool.com/wp-content/uploads/Sin-título-4.png",
+      "title": "Tecnicas de programación I",
+      "views": 2,
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae voluptatum atque molestias, ipsum dolorem vel ea consequuntur suscipit modi necessitatibus neque quae id cupiditate sequi iure temporibus dolores. Nesciunt, quibusdam?"
+    },
+    {
+      "url": "https://metricool.com/wp-content/uploads/Sin-título-4.png",
+      "title": "Tecnicas de programación II",
+      "views": 4,
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae voluptatum atque molestias, ipsum dolorem vel ea consequuntur suscipit modi necessitatibus neque quae id cupiditate sequi iure temporibus dolores. Nesciunt, quibusdam?"
+    },
+    {
+      "url": "https://metricool.com/wp-content/uploads/Sin-título-4.png",
+      "title": "Tecnicas de programación III",
+      "views": 3,
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae voluptatum atque molestias, ipsum dolorem vel ea consequuntur suscipit modi necessitatibus neque quae id cupiditate sequi iure temporibus dolores. Nesciunt, quibusdam?"
+    }
+  ]
+}

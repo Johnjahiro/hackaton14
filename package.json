@@ -1,0 +1,17 @@
+{
+  "name": "hackaton-14",
+  "version": "1.0.0",
+  "description": "CRUD",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch ./db/db.json"
+  },
+  "keywords": [
+    "VUE"
+  ],
+  "author": "Jahiro Chalco",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
+}

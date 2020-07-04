@@ -1,0 +1,17 @@
+@mixin for-phone-only {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin cardInfo {
+  margin: 0.2em 0;
+  font-size: .92em;
+  letter-spacing: 2px;
+  color: $gray;
+}

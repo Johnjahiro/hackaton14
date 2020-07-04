@@ -1,0 +1,56 @@
+.card {
+  // width: 250px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 0 3px rgb(34, 97, 168);
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 0 5px rgb(34, 97, 168);
+  }
+  &__edit {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+  }
+  &__delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+  }  
+  &:hover .is-active {
+    display: block;
+  }
+  &__content {    
+    padding: 1.4em;
+    text-align: center;
+  }
+  &__title {
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    color: olivedrab;
+    font-family: "HelveticaWorld-Bold";
+  }
+  &__app {
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    color: olivedrab;
+    font-family: "HelveticaWorld-Bold";
+  }
+  &__image {
+    margin: 0.4em 0;
+    // border-radius: 50%;
+  }
+  &__views {    
+    @include cardInfo();
+  }
+
+  &__description {
+    text-align: justify;
+    font-size: 0.9em;
+    color: $grayDark;
+    letter-spacing: 1px;
+  }
+}

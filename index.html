@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="wrapper">
+          <img src="https://i.imgur.com/scrcyJ3.png" width="80" height="67" />
+          <a class="btnAdd" href="#" @click="modal=!modal"
+            >Add video<img src="./img/icon-add.png" width="30" height="30"
+          /></a>
+        </div>
+      </header>
+      <main class="main">
+        <div class="grid">
+          <div class="card" v-for="(video,index) in videos">
+            <a id="btnEdit" class="card__edit is-active" href="#">
+              <img src="./img/icon-edit.png" alt="Edit" width="30" />
+            </a>
+            <a id="btnDelete" class="card__delete is-active" href="#" @click="deleteVideo(index)">
+              <img
+                src="./img/icon-delete.png"
+                alt="Delete"
+                width="30"
+                
+              />
+            </a>
+            <div class="card__content">
+              <img
+                class="card__image"
+                width="210"
+                height="150"
+                src="video.url"
+              />
+              <h2 class="card__title">{{video.title}}</h2>
+              <p class="card__views">{{video.views}} visitas</p>
+              <p class="card__description">
+                {{video.description}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <form
+          id="formPet"
+          class="form"
+          :class="{'active': modal, 'hidden': !modal}"
+        >
+          <h3>Agregar Video</h3>
+          <div class="form__grid">
+            <div>
+              <input type="text" placeholder="Titulo" v-model="movies.title" />
+            </div>
+            <div>
+              <input type="text" placeholder="Url-video" v-model="movies.url" />
+            </div>
+          </div>
+          <div>
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Descripcion"
+              v-model="movies.description"
+            ></textarea>
+          </div>
+          <div class="btnModal">
+            <button @click="guardar">Agregar</button>
+            <!-- <input
+              class="inpAceptar"
+              id="btnAceptar"
+              type="submit"
+              value="Aceptar"
+              @submit.prevent="guardar"
+            />           -->
+            <button @click="modal=false" class="btnCancelar">Cancelar</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
